@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { player } from "../fonts/fonts";
-
 
 export default function Main () {
     return (
@@ -9,7 +7,7 @@ export default function Main () {
          <section className="flex flex-col items-center justify-center text-center py-8 lg:text-start lg:flex-row lg:px-16 lg:py-[4rem] lg:gap-16 xl:gap-44">
           {/* Text and Button Section */}
            <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
-                <h1 className={`${player.className} text-color-two font-semibold px-12 text-xl my-4 lg:px-0 lg:text-4xl lg:w-[29.4375rem]`}>
+                <h1 className={`text-color-two font-semibold px-12 text-xl my-4 lg:px-0 lg:text-4xl lg:w-[29.4375rem]`}>
                 List and grow your business with just few clicks
                 </h1>
 
@@ -22,7 +20,7 @@ export default function Main () {
                 height={126.37} 
                 />
 
-                <p className="text-sm text-color-one px-8 py-4 sm:px-28 md:px-32 lg:px-0 lg:w-[425px] lg:text-xl">
+                <p className="text-sm text-color-one px-8 py-4 sm:px-28 md:px-32 lg:px-0 lg:w-[425px] lg:text-xl xl:w-[559px]">
                 Eliminate manual work and save time by listing your business or service on the best business directory in Nigeria.
                 </p>
             </div>
@@ -39,19 +37,19 @@ export default function Main () {
         </section>
         
         {/* Features Section */}
-        <section className="flex flex-col justify-center items-center space-y-36">
+        <section className="flex flex-col justify-center items-center space-y-24">
           {/* Collect reviews and ratings */}
-          <section className="flex flex-col justify-center items-center sm:flex-row gap-8 my-8 lg:gap-2 xl:gap-32">
+          <section className="flex flex-col justify-center items-center sm:flex-row gap-8 my-8 lg:gap-0 lg:px-16 xl:gap-32">
             <Image 
               src={"/images/feature-1.svg"}
               alt="Illustration"
-              className="lg:w-[500px]"
+              className="lg:w-[450px] xl:w-[592.87px]"
               width={200}
               height={185.28}
             />
             <div className="flex flex-col justify-center items-center text-center lg:text-start lg:items-start">
-              <h3 className={`${player.className} font-medium text-color-two lg:text-2xl`}>Collect reviews and ratings from customers</h3>
-              <p className="font-light text-sm text-color-one w-[16.875625rem] my-2 lg:text-xl lg:w-[23.1875rem]">Accelerate your business reputation by 90% and gain social proof through reviews and ratings requested from customers.</p>
+              <h2 className={`font-semibold text-color-two px-20 lg:px-0 lg:text-4xl lg:w-[536px]`}>Collect reviews and ratings from customers</h2>
+              <p className="font-light text-sm text-color-one w-[16.875625rem] leading-4 my-2 lg:text-xl lg:w-[450px] xl:w-[557px]">Accelerate your business reputation by 90% and gain social proof through reviews and ratings requested from customers.</p>
             </div>
           </section>
           
@@ -71,13 +69,13 @@ export default function Main () {
             <Image 
               src={"/images/features-3.svg"}
               alt="Illustration"
-              className="lg:w-[500px]"
+              className="lg:w-[450px] xl:w-[521px]"
               width={200}
               height={185.28}
             />
             <div className="flex flex-col justify-center items-center text-center lg:text-start lg:items-start">
-              <h3 className={`${player.className} font-medium text-color-two lg:text-2xl`}>Accept and sell appointments</h3>
-              <p className="font-light text-sm text-color-one w-[16.875625rem] my-2 lg:text-xl lg:w-[23.1875rem] xl:w-[557px]">Let customers book their own appointment or consultation. Start accepting payments for appointments through your booking page. .</p>
+              <h2 className={`font-semibold text-color-two lg:text-4xl`}>Accept and sell appointments</h2>
+              <p className="font-light text-sm text-color-one w-[16.875625rem] leading-4 my-2 lg:text-xl lg:w-[450px] xl:w-[557px]">Let customers book their own appointment or consultation. Start accepting payments for appointments through your booking page.</p>
             </div>
           </section>
         </section>

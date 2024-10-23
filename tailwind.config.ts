@@ -15,6 +15,7 @@ const config: Config = {
         "color-four": "#1E1E4B",
         "color-five": "#603F8B",
         "color-six": "#B6B6E5",
+        "color-seven": "#63428E"
       },
     },
   },

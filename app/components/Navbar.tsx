@@ -2,7 +2,7 @@
 import {useState, useEffect} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import { poppins } from '../fonts/fonts';
+//import { poppins } from '../fonts/fonts';
 import { FaTimes, FaBars } from 'react-icons/fa';
 
 
@@ -33,7 +33,7 @@ export default function Navbar () {
   };
 
   return (
-    <nav className={`${poppins.className} lg:flex justify-between lg:self-center items-baseline`}>
+    <nav className={`lg:flex justify-between lg:self-center items-baseline`}>
         <div className="flex justify-between items-center">
             <div className="flex">
                 <Image 

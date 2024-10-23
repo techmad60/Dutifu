@@ -2,4 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Recoleta Alt font */
+@font-face {
+    font-family: 'Recoleta Alt';
+    src: url('fonts/recoleta/RecoletaAlt-SemiBold.eot'),
+        url('fonts/recoleta/RecoletaAlt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/recoleta/RecoletaAlt-SemiBold.woff2') format('woff2'),
+        url('fonts/recoleta/RecoletaAlt-SemiBold.woff') format('woff'),
+        url('fonts/recoleta/RecoletaAlt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Recoleta Alt';
+    src: url('fonts/recoleta/RecoletaAlt-Medium.eot'),
+        url('fonts/recoleta/RecoletaAlt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/recoleta/RecoletaAlt-Medium.woff2') format('woff2'),
+        url('fonts/recoleta/RecoletaAlt-Medium.woff') format('woff'),
+        url('fonts/recoleta/RecoletaAlt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Recoleta Alt';
+    src: url('fonts/recoleta/RecoletaAlt-Bold.eot'),
+        url('fonts/recoleta/RecoletaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/recoleta/RecoletaAlt-Bold.woff2') format('woff2'),
+        url('fonts/recoleta/RecoletaAlt-Bold.woff') format('woff'),
+        url('fonts/recoleta/RecoletaAlt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recoleta Alt';
+    src: url('fonts/recoleta/RecoletaAlt-Black.eot'),
+        url('fonts/recoleta/RecoletaAlt-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/recoleta/RecoletaAlt-Black.woff2') format('woff2'),
+        url('fonts/recoleta/RecoletaAlt-Black.woff') format('woff'),
+        url('fonts/recoleta/RecoletaAlt-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Circular Std font */
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/circular/CircularStd-Medium.eot'),
+        url('fonts/circular/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/circular/CircularStd-Medium.woff2') format('woff2'),
+        url('fonts/circular/CircularStd-Medium.woff') format('woff'),
+        url('fonts/circular/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('fonts/circular/CircularStd-Bold.eot'),
+        url('fonts/circular/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/circular/CircularStd-Bold.woff2') format('woff2'),
+        url('fonts/circular/CircularStd-Bold.woff') format('woff'),
+        url('fonts/circular/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('fonts/circular/CircularStd-Book.eot'),
+        url('fonts/circular/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/circular/CircularStd-Book.woff2') format('woff2'),
+        url('fonts/circular/CircularStd-Book.woff') format('woff'),
+        url('fonts/circular/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'Recoleta Alt', sans-serif;
+    
+}
+body {
+    font-family: 'Circular Std Book', sans-serif;
+    font-weight: 300;
+    /* opacity:0.9; */
+}
+  
+
+
+
+/* @font-face {
+    font-family: 'Recoleta';
+    src: url('Recoleta-Regular.eot'),
+        url('Recoleta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Recoleta-Regular.woff2') format('woff2'),
+        url('Recoleta-Regular.woff') format('woff'),
+        url('Recoleta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('Recoleta-Black.eot'),
+        url('Recoleta-Black.eot?#iefix') format('embedded-opentype'),
+        url('Recoleta-Black.woff2') format('woff2'),
+        url('Recoleta-Black.woff') format('woff'),
+        url('Recoleta-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+} */
