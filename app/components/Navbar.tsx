@@ -58,8 +58,8 @@ export default function Navbar () {
            <button onClick={handleToggleNav} className="lg:hidden">
             <FaTimes size={24} className='text-white'/>
             </button>
-            <div className="flex flex-col text-white my-12 text-center text-lg leading-[3.75rem] lg:text-color-one lg:flex-row lg:text-sm lg:my-4 lg:gap-20">
-                <div className='flex flex-col lg:flex-row items-center justify-between lg:space-x-12 lg:text-lg '>
+            <div className="flex flex-col text-white my-12 text-center text-lg leading-[3.75rem] lg:text-color-one lg:flex-row lg:text-sm lg:my-4 lg:gap-8 xl:gap-20">
+                <div className='flex flex-col lg:flex-row items-center justify-between lg:space-x-6 lg:text-lg xl:space-x-12'>
                     <Image 
                     className="lg:hidden my-4"
                     src={"/images/search-light.svg"}
@@ -87,10 +87,10 @@ export default function Navbar () {
                 </div>
             
                 <div className="flex flex-col space-y-6 mt-12 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center lg:mt-0 rounded-md text-center">
-                    <Link href="/login" className="bg-btn-two-color lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white font-medium border border-white lg:text-lg lg:border-none lg:text-color-four">
+                    <Link href="/login" className="lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white font-medium border border-white lg:text-lg lg:border-none lg:text-color-four">
                     Login
                     </Link>
-                    <Link href="/Sign up" className="bg-btn-two-color lg:px-4 lg:py-2 transition duration-150 hover:ease-in text-color-three bg-white border border-color-five font-medium rounded-md px-[3.25rem] lg:text-lg lg:text-color-five">
+                    <Link href="/Sign up" className="transition duration-150 hover:ease-in text-color-three bg-white border border-color-five font-medium rounded-md px-[3.25rem] lg:text-lg lg:px-[2rem] lg:py-[1.0625rem] lg:text-color-five xl:px-[3.25rem]">
                     Sign up
                     </Link>
                 </div>
