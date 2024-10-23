@@ -2,7 +2,7 @@
 import {useState, useEffect} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import { inty } from '../fonts/fonts';
+import { poppins } from '../fonts/fonts';
 import { FaTimes, FaBars } from 'react-icons/fa';
 
 
@@ -33,52 +33,69 @@ export default function Navbar () {
   };
 
   return (
-    <nav className={`${inty.className} lg:flex justify-between lg:self-center items-center`}>
-      <div className="flex justify-between items-center">
-        <div className="flex items-center">
-            <Image 
-            className="logo lg:w-[180px]"
-            src={"/images/logo.svg"}
-            alt="Dutiful Logo"
-            width={50}
-            height={10}/>
+    <nav className={`${poppins.className} lg:flex justify-between lg:self-center items-baseline`}>
+        <div className="flex justify-between items-center">
+            <div className="flex">
+                <Image 
+                className="logo lg:w-[120px]"
+                src={"/images/logo.svg"}
+                alt="Dutiful Logo"
+                width={50}
+                height={10}/>
+            </div>
+            <div className="cursor-pointer lg:hidden" onClick={handleToggleNav}>
+            <FaBars className='text-color-one'/>
+            </div>
         </div>
-        <div className="cursor-pointer lg:hidden" onClick={handleToggleNav}>
-          <FaBars className='text-color-one'/>
-        </div>
-      </div>
 
-      {isNavOpen && (
-        <div
-          className="fixed top-0 left-0 w-[25vw] min-h-screen bg-black opacity-50 z-50 lg:hidden"
-          onClick={handleToggleNav} 
-        />
-      )}
-      <div className={`bg-[#D9D9D9] absolute top-0 right-0 h-screen flex flex-col items-center p-4 w-3/4 z-40 lg:w-auto lg:flex-row lg:static lg:h-auto lg:bg-transparent lg:p-0 ${isNavOpen ? 'fixed' : 'hidden lg:flex'} `}>
-        <button onClick={handleToggleNav} className="lg:hidden">
-        <FaTimes size={24} />
-        </button>
-        <div className="flex flex-col text-center text-color-one my-12 text-xl leading-[3.75rem] lg:flex-row lg:text-sm lg:my-8">
-            <div className='flex flex-col lg:flex-row justify-between items-center lg:relative right-[10rem] lg:space-x-12 xl:right-[14rem] lg:text-xl'>
-              <a href="/" className={`font-light transition duration-150 hover:ease-in`}>
-                Home
-              </a>
-              <a href="/features" className={`font-light transition duration-150 hover:ease-in`}>
-                Features
-              </a>
-              <a href="/contact-us" className={` font-light transition duration-150 hover:ease-in`}>
-                Contact us
-              </a>
-            </div>
-          
-            <div className="flex flex-col space-y-6 mt-12 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center lg:mt-0 bg-color-three rounded-md">
-              <Link href="/login" className="bg-btn-two-color lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white lg:text-lg">
-              Signin
-              </Link>
-              
+        {isNavOpen && (
+            <div
+            className="fixed top-0 left-0 w-[25vw] min-h-screen bg-black opacity-50 z-50 lg:hidden"
+            onClick={handleToggleNav} 
+            />
+        )}
+        <div className={`bg-color-three absolute top-0 right-0 h-screen flex flex-col items-center p-4 w-3/4 z-40 lg:w-auto lg:flex-row lg:static lg:h-auto lg:bg-transparent lg:p-0 ${isNavOpen ? 'fixed' : 'hidden lg:flex'} `}>
+           <button onClick={handleToggleNav} className="lg:hidden">
+            <FaTimes size={24} className='text-white'/>
+            </button>
+            <div className="flex flex-col text-white my-12 text-center text-lg leading-[3.75rem] lg:text-color-one lg:flex-row lg:text-sm lg:my-4 lg:gap-20">
+                <div className='flex flex-col lg:flex-row items-center justify-between lg:space-x-12 lg:text-lg '>
+                    <Image 
+                    className="lg:hidden my-4"
+                    src={"/images/search-light.svg"}
+                    alt="Search icon"
+                    width={32}
+                    height={32}/>
+                    <Image 
+                    className="hidden lg:flex"
+                    src={"/images/search.svg"}
+                    alt="Search icon"
+                    width={32}
+                    height={32}/>
+                    <a href="/">
+                        Business Directory
+                    </a>
+                    <a href="/">
+                        Features
+                    </a>
+                    <a href="/">
+                        Pricing
+                    </a>
+                    <a href="/">
+                        Blog
+                    </a>
+                </div>
+            
+                <div className="flex flex-col space-y-6 mt-12 lg:flex lg:flex-row lg:space-x-4 lg:space-y-0 lg:items-center lg:mt-0 rounded-md text-center">
+                    <Link href="/login" className="bg-btn-two-color lg:px-4 lg:py-2 rounded-md transition duration-150 hover:ease-in text-white font-medium border border-white lg:text-lg lg:border-none lg:text-color-four">
+                    Login
+                    </Link>
+                    <Link href="/Sign up" className="bg-btn-two-color lg:px-4 lg:py-2 transition duration-150 hover:ease-in text-color-three bg-white border border-color-five font-medium rounded-md px-[3.25rem] lg:text-lg lg:text-color-five">
+                    Sign up
+                    </Link>
+                </div>
             </div>
         </div>
-      </div>
     </nav>
   )
 }
