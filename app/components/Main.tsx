@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Main () {
     return (
-        <main>
+        <main className="">
          {/* Hero Section */}
-         <section className="flex flex-col items-center justify-center text-center py-8 lg:text-start lg:flex-row lg:px-16 lg:py-[4rem] lg:gap-16 xl:gap-44">
+         <section className="flex flex-col items-center justify-center text-center py-8  lg:text-start lg:flex-row lg:px-16 lg:py-[4rem] lg:gap-16 m-auto xl:gap-40 xl:px-32">
           {/* Text and Button Section */}
            <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start">
                 <h1 className={`text-color-two font-semibold px-12 text-xl my-4 lg:px-0 lg:text-4xl lg:w-[29.4375rem]`}>
@@ -29,7 +29,7 @@ export default function Main () {
             {/* Large Screen Hero Image */}
             <div className="hidden lg:flex">
                 <Image 
-                src="/images/Hero-img.svg"
+                src="/images/hero-img.svg"
                 alt="Hero Image"
                 width={500}
                 height={56}
