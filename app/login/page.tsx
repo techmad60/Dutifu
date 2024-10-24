@@ -4,30 +4,16 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer"
-import Check from "../components/Check";
-import CheckBox from "../components/Checkedbox";
-import EmptyBox from "../components/UncheckedBox";
 import FormButton from "../components/FormButton";
 import {FaEye, FaEyeSlash } from "react-icons/fa";
 
 
 
 export default function LoginPage() {
-
-    //Toggle active functionality
-    const [active, setActive] = useState("regular");
     const [showPassword, setShowPassword] = useState(false);
-    const [isChecked, setIsChecked] = useState(false);
-
     //Toggle Password Visibility
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
-    };
-    
-
-    // Toggle the checkbox state
-    const toggleCheckbox = () => {
-        setIsChecked(!isChecked);
     };
 
     return (
@@ -39,10 +25,11 @@ export default function LoginPage() {
                     <h1 className="text-color-two font-semibold text-4xl">Get Login</h1>
                 </section>
                  
-                {/* Sign Up Form */}
+                {/*Login Form */}
                 <section className="w-full max-w-[486px]">
                     <form  className={`flex flex-col justify-center px-6 mt-12 mb-6 space-y-8`}>
                         
+                        {/* Email */}
                         <div className="flex flex-col gap-2">
                             <label className="text-color-five">Email</label>
                             <input 
@@ -51,7 +38,8 @@ export default function LoginPage() {
                             autoFocus 
                             className="rounded-sm border-2 h-[56px] border-color-nine bg-color-ten p-2"/>
                         </div>
-
+                        
+                        {/* Password */}
                        <div className="flex flex-col gap-2 ">
                             <label className="text-color-five">Password</label>
                             <div className="relative">
@@ -64,14 +52,13 @@ export default function LoginPage() {
                                 <button 
                                     type="button" 
                                     onClick={togglePasswordVisibility} 
-                                    className="absolute inset-y-0 right-3 flex items-center text-color-eleven"
+                                    className="absolute inset-y-0 right-3 flex items-center text-color-eleven duration-300 hover:text-color-five"
                                 >
                                     {showPassword ? <FaEyeSlash /> : <FaEye />}
                                 </button>
                             </div>
                             <Link href="/forgot-password" className="self-end text-sm text-color-eleven duration-300 hover:text-color-five">Forgot password?</Link>
                         </div>
-            
                         <FormButton ButtonText="Login"/>
                     </form>
                     <p className="text-center text-color-twelve px-4">Don&apos; have an account? 

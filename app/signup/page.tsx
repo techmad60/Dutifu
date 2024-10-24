@@ -65,6 +65,7 @@ export default function SignupPage() {
                 {/* Sign Up Form */}
                 <section className="w-full max-w-[486px]">
                     <form  className={`flex flex-col justify-center px-6 mt-12 mb-6 space-y-8`}>
+                        {/* Name */}
                         <div className="flex flex-col gap-2">
                             <label className="text-color-five">Full Name</label>
                             <input 
@@ -75,6 +76,7 @@ export default function SignupPage() {
                             className="rounded-sm border-2 h-[56px] border-color-nine bg-color-ten p-2"/>
                         </div>
                         
+                        {/* Email */}
                         <div className="flex flex-col gap-2">
                             <label className="text-color-five">Email</label>
                             <input 
@@ -84,6 +86,7 @@ export default function SignupPage() {
                             className="rounded-sm border-2 h-[56px] border-color-nine bg-color-ten p-2"/>
                         </div>
                         
+                        {/* Phone Number */}
                         <div className="flex flex-col gap-2">
                             <label className="text-color-five">Phone Number</label>
                             <input 
@@ -94,8 +97,8 @@ export default function SignupPage() {
                             className="rounded-sm border-2 h-[56px] border-color-nine bg-color-ten p-2"/>
                         </div>
                         
-
-                       <div className="flex flex-col gap-2">
+                        {/* Password */}
+                        <div className="flex flex-col gap-2">
                             <label className="text-color-five">Password</label>
                             <div className="relative">
                                 <input 
@@ -114,6 +117,7 @@ export default function SignupPage() {
                             </div>
                         </div>
                         
+                        {/* Repeat Password */}
                         <div className="flex flex-col gap-2">
                             <label className="text-color-eleven">Re-enter Password</label>
                             <div className="relative">
@@ -132,13 +136,13 @@ export default function SignupPage() {
                                 </button>
                             </div>
                         </div>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-start gap-4">
                             {/* Toggle between EmptyBox and CheckBox based on state */}
                             <div onClick={toggleCheckbox} className="cursor-pointer">
                                 {isChecked ? <CheckBox /> : <EmptyBox />}
                             </div>
                             <p className="text-sm text-blue-950">
-                            I agree to dutiful's <span className="text-color-eleven cursor-pointer  pb-2 border-b border-color-eleven hover:text-color-five">terms and conditions.</span>
+                            I agree to dutiful's <span className="text-color-eleven cursor-pointer  pb-1 border-b border-color-eleven hover:text-color-five">terms and conditions.</span>
                             </p>
                         </div>
             

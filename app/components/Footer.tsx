@@ -7,7 +7,7 @@ import { PiLinkedinLogoFill, PiInstagramLogoThin } from "react-icons/pi";
 export default function Footer (){
     return (
         <footer className="bg-color-three text-white pt-8 px-16 mt-20 flex flex-col lg:justify-center lg:items-center">
-            <nav className="flex flex-col justify-start items-start space-y-12 border-b my-8 border-color-seven py-8 lg:flex-row lg:space-y-0 lg:gap-28 xl:gap-56" aria-label="footer-nav">
+            <nav className="flex flex-col justify-start items-start space-y-12 border-b my-8 border-color-seven py-8 sm:grid grid-cols-2 sm:space-y-0 sm:gap-8 lg:flex lg:flex-row lg:space-y-0 lg:gap-28 xl:gap-56" aria-label="footer-nav">
 
                 {/* Contact Section */}
                 <section className="flex flex-col space-y-4 justify-start items-start">
@@ -47,7 +47,7 @@ export default function Footer (){
                 </section>
             </nav>
 
-            <div className='flex flex-col lg:mx-12 border-b border-color-seven gap-12 lg:gap-[20rem] xl:gap-[40rem] lg:flex-row pb-8'>
+            <div className='flex flex-col border-b border-color-seven gap-12 lg:mx-12 lg:gap-[20rem] xl:gap-[40rem] lg:flex-row pb-8'>
             {/* Socials Section */}
                 <section className="flex flex-col ">
                     <nav className="flex flex-col gap-4 lg:flex-row">
