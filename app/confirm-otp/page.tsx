@@ -1,6 +1,5 @@
 //Confirm Otp Page
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer"
 import FormButton from "../components/FormButton";
@@ -11,6 +10,7 @@ export default function ConfirmOtp() {
             <Header/>
                 <main className="flex flex-col justify-center items-center mt-12 ">
                     <section className="flex flex-col justify-center items-center px-6 sm:max-w-[486px] w-full">
+                        {/* Input Fields For OTP */}
                         <form className="flex justify-center items-baseline gap-2 sm:gap-8 my-8">
                             <input type="number" className="border w-[75px] h-[75px] flex items-center justify-center text-center bg-color-thirteen border-color-fourteen rounded-md text-xl text-color-five"/>
                             <input type="number" className="border w-[75px] h-[75px] flex items-center justify-center text-center bg-color-thirteen border-color-fourteen rounded-md text-xl text-color-five" />

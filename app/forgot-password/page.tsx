@@ -18,7 +18,7 @@ export default function ForgotPasswordPage() {
                         <FaArrowLeftLong className=""/>
                     </Link>
                     <h1 className="text-color-two font-semibold text-4xl">Forgot Password</h1>
-                    <p className="text-color-one px-12 lg:px-0">Enter your email and we'll send you a mail on how to reset your password.</p>
+                    <p className="text-color-one px-12 lg:px-0">Enter your email and we&apos;ll send you a mail on how to reset your password.</p>
                 </section>
                  
                 {/*Forgot Password Form */}
