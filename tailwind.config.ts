@@ -27,7 +27,10 @@ const config: Config = {
 
         //Used in Confirm-Otp Page
         "color-thirteen": "#F3F3F3",
-        "color-fourteen": "#B6B6E5"
+        "color-fourteen": "#B6B6E5",
+        
+        //Used in Pricing Page
+        "colour-fifteen": "#FCFAFF",
       },
     },
   },

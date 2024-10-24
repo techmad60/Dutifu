@@ -14,7 +14,7 @@ export default function Main () {
 
                 {/* Responsive Hero Image */}
                 <Image 
-                src="/images/Hero-img.svg" 
+                src="/images/hero-img.svg" 
                 alt="Hero Image"
                 className="my-4 lg:hidden" 
                 width={180} 

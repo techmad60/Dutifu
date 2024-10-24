@@ -2,6 +2,7 @@
 import { FaFacebookF, FaApple, FaGooglePlay} from 'react-icons/fa';
 import { FaXTwitter, FaYoutube} from "react-icons/fa6";
 import { PiLinkedinLogoFill, PiInstagramLogoThin } from "react-icons/pi";
+import Link from 'next/link';
 
 
 export default function Footer (){
@@ -14,7 +15,7 @@ export default function Footer (){
                     <p className={`text-center text-[1.375rem] font-medium  whitespace-nowrap`}>Contact Us</p>
                     <ul className="text-color-six">
                         <li className=""><a href="">About</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <Link href="/contact-us">Contact us</Link>
                         <li><a href="">FAQs</a></li>
                     </ul>
                 </section>

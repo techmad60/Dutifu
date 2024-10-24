@@ -81,7 +81,7 @@ export default function Navbar () {
                             />
                             <Image 
                             className="hidden lg:flex"
-                            src={"/images/search.svg"}
+                            src={"/images/Search.svg"}
                             alt="Search icon"
                             width={32}
                             height={32}
@@ -91,13 +91,13 @@ export default function Navbar () {
                     <Link href="/" className={`${isActiveLink('/') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
                         Business Directory
                     </Link>
-                    <Link href="/features" className={`${isActiveLink('/features') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
+                    <Link href="/" className={`${isActiveLink('/features') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
                         Features
                     </Link>
                     <Link href="/pricing" className={`${isActiveLink('/pricing') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
                         Pricing
                     </Link>
-                    <Link href="/blog" className={`${isActiveLink('/blog') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
+                    <Link href="/" className={`${isActiveLink('/blog') ? 'text-color-six lg:text-color-three border-b border-color-six lg:border-color-three' : ''} hover:text-color-six lg:hover:text-color-three transition duration-150 hover:ease-in`}>
                         Blog
                     </Link>
                 </div>
