@@ -89,9 +89,20 @@ h1, h2, h3 {
 body {
     font-family: 'Circular Std Book', sans-serif;
     font-weight: 300;
-    /* opacity:0.9; */
 }
-  
+
+/* Hide number input spinner for Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide number input spinner for Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 
 
 

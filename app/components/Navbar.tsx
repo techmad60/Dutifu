@@ -38,7 +38,7 @@ export default function Navbar () {
   const isActiveLink = (href: string) => pathname === href;
 
   // Conditionally render search icon (not on signup page)
-  const shouldShowSearchIcon = pathname !== '/signup' && pathname !== '/login' && pathname != '/forgot-password' && pathname!= '/get-otp';
+  const shouldShowSearchIcon = pathname !== '/signup' && pathname !== '/login' && pathname != '/forgot-password' && pathname!= '/get-otp' && pathname!= '/confirm-otp' && pathname!= '/reset-password';
 
 
   return (

@@ -23,7 +23,11 @@ const config: Config = {
         "color-nine": "#E7EAF1" ,//Border-stroke
         "color-ten": "#F8FAFD" ,//Input Field BG
         "color-eleven": "#A16AE8",//light purple
-        "color-twelve": "#A3B1BF" //Light grey
+        "color-twelve": "#A3B1BF", //Light grey
+
+        //Used in Confirm-Otp Page
+        "color-thirteen": "#F3F3F3",
+        "color-fourteen": "#B6B6E5"
       },
     },
   },

@@ -10,7 +10,7 @@ export default function GetOtp() {
         <div className="">
             <Header/>
                 <main className="flex flex-col justify-center items-center mt-12 ">
-                    <section className="flex flex-col justify-center items-center lg:max-w-[408px] w-full">
+                    <section className="flex flex-col justify-center items-center px-6 sm:max-w-[408px]">
                         <Image 
                             className="my-4"
                             src={"/images/email-icon.svg"}
@@ -22,7 +22,7 @@ export default function GetOtp() {
                         Check your email to get the code</p>
 
                         {/* Submit buttton */}
-                        <Link href="/confirm-otp" className="w-full my-12">
+                        <Link href="/confirm-otp" className="my-12 w-full">
                            <FormButton ButtonText="Next"/>
                         </Link>
                     
