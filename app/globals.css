@@ -82,6 +82,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('fonts/circular/CircularStd-BookItalic.eot'),
+        url('fonts/circular/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/circular/CircularStd-BookItalic.woff2') format('woff2'),
+        url('fonts/circular/CircularStd-BookItalic.woff') format('woff'),
+        url('fonts/circular/CircularStd-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 h1, h2, h3 {
     font-family: 'Recoleta Alt', sans-serif;
     

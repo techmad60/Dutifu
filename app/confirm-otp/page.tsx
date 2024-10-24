@@ -25,7 +25,7 @@ export default function ConfirmOtp() {
                            <FormButton ButtonText="Confirm OTP"/>
                         </Link>
 
-                        <p className="text-center text-color-twelve px-4">Didn't get a code? 
+                        <p className="text-center text-color-twelve px-4">Didn&apos;t get a code? 
                             <Link href="/get-otp">
                             <span className="text-color-eleven cursor-pointer duration-300 hover:text-color-five px-2">Resend</span>
                             </Link>
