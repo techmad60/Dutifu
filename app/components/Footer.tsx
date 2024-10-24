@@ -5,9 +5,9 @@ import { PiLinkedinLogoFill, PiInstagramLogoThin } from "react-icons/pi";
 import Link from 'next/link';
 
 
-export default function Footer (){
+export default function Footer ({margin = ""}){
     return (
-        <footer className="bg-color-three text-white pt-8 px-16 mt-20 flex flex-col lg:justify-center lg:items-center">
+        <footer className={`bg-color-three text-white pt-8 px-16 mt-20 flex flex-col lg:justify-center lg:items-center ${margin}`}>
             <nav className="flex flex-col justify-start items-start space-y-12 border-b my-8 border-color-seven py-8 sm:grid grid-cols-2 sm:space-y-0 sm:gap-8 lg:flex lg:flex-row lg:space-y-0 lg:gap-28 xl:gap-56" aria-label="footer-nav">
 
                 {/* Contact Section */}
@@ -25,7 +25,7 @@ export default function Footer (){
                     <p className={`text-center text-[1.375rem] font-medium  whitespace-nowrap`}>Quick links</p>
                     <ul className="text-color-six">
                         <li><a href="">Find Services</a></li>
-                        <li><a href="">Pricing & plans</a></li>
+                        <Link href="/pricing">Pricing & plans</Link>
                         <li><a href="">List your business</a></li>
                     </ul>
                 </section>

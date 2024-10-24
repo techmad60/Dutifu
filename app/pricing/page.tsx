@@ -5,6 +5,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { IoIosCheckmark } from "react-icons/io";
+import { FaTimes} from 'react-icons/fa';
 // import FormButton from "../components/FormButton";
 // import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
@@ -21,9 +22,9 @@ export default function ContactUsPage() {
                     <p className="text-color-one text-lg px-4 sm:px-16 lg:w-[888px]">Our fully organized plans deliver valuable content that showcases your services and skills, drives Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>   
                 </section>
 
-                <section className="flex justify-center items-center w-full py-16 gap-8 rounded-md flex-col lg:flex-row">
+                <section className="flex justify-center items-center w-full py-16 gap-4 rounded-md flex-col lg:flex-row lg:gap-8">
                     {/* Free */}
-                    <section className="bg-white w-[280px] p-8">
+                    <section className="bg-white w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
                         <div className="my-8">
                             <p className="text-color-two">Basic</p>
                             <h2 className="font-semibold text-color-two text-4xl">Free</h2>
@@ -91,10 +92,10 @@ export default function ContactUsPage() {
                     </section>
 
                     {/* Standard */}
-                    <section className="bg-white w-[280px] p-8">
+                    <section className="bg-white w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
                         <div className="my-8">
                             <p className="text-color-two">Standard</p>
-                            <div className="flex">
+                            <div className="flex items-center justify-center">
                                 <p>&#8358;
                                 </p>
                                 <h2 className="font-semibold text-color-two text-4xl">20,000</h2>
@@ -179,11 +180,11 @@ export default function ContactUsPage() {
                         </div>
                         
                     </section>
-                    {/* Standard */}
-                    <section className="bg-white w-[280px] p-8">
+                    {/* Premium*/}
+                    <section className="bg-white w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
                         <div className="my-8">
                             <p className="text-color-two">Premium</p>
-                            <div className="flex">
+                            <div className="flex justify-center items-center">
                                 <p>&#8358;
                                 </p>
                                 <h2 className="font-semibold text-color-two text-4xl">30,000</h2>
@@ -273,16 +274,279 @@ export default function ContactUsPage() {
                                 <IoIosCheckmark className="text-lg" />
                                 <p className="text-color-one">24/7 service and support</p>
                             </div>
+                        </div> 
+                    </section>
+                </section>
+                
+                <p className="font-semibold text-2xl text-color-two">Features and Overviews</p>
+                {/* Features and overviews */}
+                <section className="flex justify-center items-center w-full pt-2 pb-16 rounded-md flex-col lg:flex-row lg:items-start">
+                    {/* Free */}
+                    <section className="w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
+                        <div className="my-8">
+                            <p className="text-color-two">Basic</p>
+                            <button className="bg-color-three p-4 text-white w-full shadow-md">Get Started</button>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between p-4 gap-4 bg-white">
+                                <p className="text-color-one whitespace-nowrap">Access to dashboard</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center justify-between gap-4 p-4">
+                                <p className="text-color-one">No. of business listing</p>
+                                <p>2</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of products/services</p>
+                                <p>2</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between">
+                                <p className="text-color-one">No. of Images</p>
+                                <p>2</p>
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of Keywords</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display service hours and prices</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Display address, contact and email</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Instant chat</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Reviews and ratings</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Profile visibility</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Instant notifications</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display website and social network</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                                
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Quotes</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Bookmarks</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white ">
+                                <p className="text-color-one">Profile views</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Verified badge</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Latest offers</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Accept and sell appointment</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">24/7 support</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                        </div>
+                        
+                    </section>
+
+                    {/* Standard */}
+                    <section className="w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
+                        <div className="my-8">
+                            <p className="text-color-two">Standard</p>
+                            <button className="bg-color-three p-4 text-white w-full shadow-md">Get Started</button>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between p-4 gap-4 bg-white">
+                                <p className="text-color-one whitespace-nowrap">Access to dashboard</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center justify-between gap-4 p-4">
+                                <p className="text-color-one">No. of business listing</p>
+                                <p>6</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of products/services</p>
+                                <p>6</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between">
+                                <p className="text-color-one">No. of Images</p>
+                                <p>4</p>
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of Keywords</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display service hours and prices</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Display address, contact and email</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Instant chat</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Reviews and ratings</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Profile visibility</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Instant notifications</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display website and social network</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                                
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Quotes</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Bookmarks</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white ">
+                                <p className="text-color-one">Profile views</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Verified badge</p>
+                                <p>Purple</p>
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Latest offers</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Accept and sell appointment</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">24/7 support</p>
+                                <FaTimes className="text-sm flex-shrink-0 text-color-one" />
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Premium */}
+                    <section className="w-[280px] p-8 lg:w-[300px] xl:w-[400px]">
+                        <div className="my-8">
+                            <p className="text-color-two">Premium</p>
+                            <button className="bg-color-three p-4 text-white w-full shadow-md">Get Started</button>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="flex items-center justify-between p-4 gap-4 bg-white">
+                                <p className="text-color-one whitespace-nowrap">Access to dashboard</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center justify-between gap-4 p-4">
+                                <p className="text-color-one">No. of business listing</p>
+                                <p>10</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of products/services</p>
+                                <p>10</p>
+                            </div>
+                            <div className="flex items-center gap-4 p-4 justify-between">
+                                <p className="text-color-one">No. of Images</p>
+                                <p>6</p>
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">No. of Keywords</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display service hours and prices</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Display address, contact and email</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Instant chat</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Reviews and ratings</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Profile visibility</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Instant notifications</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Display website and social network</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                                
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Quotes</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Bookmarks</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white ">
+                                <p className="text-color-one">Profile views</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Verified badge</p>
+                                <p>Gold</p>
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">Latest offers</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between">
+                                <p className="text-color-one">Accept and sell appointment</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
+                            <div className="flex items-center p-4 justify-between bg-white">
+                                <p className="text-color-one">24/7 support</p>
+                                <IoIosCheckmark className="text-3xl flex-shrink-0 text-color-eleven" />
+                            </div>
                         </div>
                         
                     </section>
                 </section>
 
-                <section>
-                    <p>Features Overview</p>
-                </section>
             </main>
-            <Footer />
+            <Footer margin="mt-0"/>
         </div>
     )
 }
