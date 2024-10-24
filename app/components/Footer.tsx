@@ -53,11 +53,11 @@ export default function Footer (){
                     <nav className="flex flex-col gap-4 lg:flex-row">
                         <p className='font-medium whitespace-nowrap'>Follow us</p>
                         <ul className="flex space-x-8">
-                            <li><a href="" className="text-2xl"><FaFacebookF/></a></li>
-                            <li><a href="" className="text-2xl"><PiInstagramLogoThin/></a></li>
-                            <li><a href="" className="text-2xl"><FaXTwitter/></a></li>
-                            <li><a href="" className="text-2xl"><FaYoutube/></a></li>
-                            <li><a href="" className="text-2xl"><PiLinkedinLogoFill/></a></li>
+                            <li><a href="" className="text-2xl hover:text-color-six duration-300"><FaFacebookF/></a></li>
+                            <li><a href="" className="text-2xl hover:text-color-six duration-300"><PiInstagramLogoThin/></a></li>
+                            <li><a href="" className="text-2xl hover:text-color-six duration-300"><FaXTwitter/></a></li>
+                            <li><a href="" className="text-2xl hover:text-color-six duration-300"><FaYoutube/></a></li>
+                            <li><a href="" className="text-2xl hover:text-color-six duration-300"><PiLinkedinLogoFill/></a></li>
                            
                         </ul>
                     </nav>
