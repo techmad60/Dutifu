@@ -1,3 +1,5 @@
+// Header Component
+
 import Navbar from "./Navbar";
 
 export default function Header() {
