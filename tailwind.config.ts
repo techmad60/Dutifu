@@ -19,7 +19,11 @@ const config: Config = {
         "color-seven": "#63428E", //footer-border-color
 
         //Used in Signup Page
-        "color-eight": "#B1BDCA" //Inactive-class
+        "color-eight": "#B1BDCA", //Inactive-class
+        "color-nine": "#E7EAF1" ,//Border-stroke
+        "color-ten": "#F8FAFD" ,//Input Field BG
+        "color-eleven": "#A16AE8",//light purple
+        "color-twelve": "#A3B1BF" //Light grey
       },
     },
   },
