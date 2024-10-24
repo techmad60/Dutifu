@@ -142,7 +142,7 @@ export default function SignupPage() {
                                 {isChecked ? <CheckBox /> : <EmptyBox />}
                             </div>
                             <p className="text-sm text-blue-950">
-                            I agree to dutiful's <span className="text-color-eleven cursor-pointer  pb-1 border-b border-color-eleven hover:text-color-five">terms and conditions.</span>
+                            I agree to dutiful&apos;s <span className="text-color-eleven cursor-pointer  pb-1 border-b border-color-eleven hover:text-color-five">terms and conditions.</span>
                             </p>
                         </div>
             
