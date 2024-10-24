@@ -36,7 +36,7 @@ export default function SignupPage() {
             <main className="flex flex-col justify-center items-center mt-12 ">
                 <section className="flex flex-col justify-center items-center lg:items-start lg:justify-start">
                     <p className="text-color-one">Sign up for free!</p>
-                    <h1 className="text-color-two font-semibold text-2xl">Get Started</h1>
+                    <h1 className="text-color-two font-semibold text-4xl">Get Started</h1>
                     <div className="flex gap-2 lg:gap-8 relative mt-8 self-center">
 
                         {/* Regular User */}
@@ -64,7 +64,7 @@ export default function SignupPage() {
                  
                 {/* Sign Up Form */}
                 <section className="w-full max-w-[486px]">
-                    <form  className={`flex flex-col justify-center px-6 my-12 space-y-8`}>
+                    <form  className={`flex flex-col justify-center px-6 mt-12 mb-6 space-y-8`}>
                         <div className="flex flex-col gap-2">
                             <label className="text-color-five">Full Name</label>
                             <input 
@@ -137,14 +137,14 @@ export default function SignupPage() {
                             <div onClick={toggleCheckbox} className="cursor-pointer">
                                 {isChecked ? <CheckBox /> : <EmptyBox />}
                             </div>
-                            <p className="text-sm cursor-pointer duration-300 hover:text-primary-color">
-                            I agree to dutiful's <span className="text-color-eleven pb-2 border-b border-color-eleven">terms and conditions.</span>
+                            <p className="text-sm text-blue-950">
+                            I agree to dutiful's <span className="text-color-eleven cursor-pointer  pb-2 border-b border-color-eleven hover:text-color-five">terms and conditions.</span>
                             </p>
                         </div>
             
-                    <FormButton ButtonText="Login"/>
+                        <FormButton ButtonText="Sign up"/>
                     </form>
-                    <p className="mt-8 text-center text-color-twelve px-4">Already have an account? 
+                    <p className="text-center text-color-twelve px-4">Already have an account? 
                         <Link href="/login">
                         <span className="text-color-eleven cursor-pointer duration-300 hover:text-color-five px-2">Login</span>
                         </Link>
